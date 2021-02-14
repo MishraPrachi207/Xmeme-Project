@@ -22,7 +22,7 @@ public class Meme{
     private int id;
 
     @Column
-    private String owner_name;
+    private String name;
 
     @Column
     private String caption;
