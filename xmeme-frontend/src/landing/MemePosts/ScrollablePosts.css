@@ -1,0 +1,11 @@
+.tile{
+   
+    position: 'relative';
+      float: 'left';
+      width: 'inherit';
+      min-height: '400px';
+      min-width: '664px';
+      overflow: 'hidden';
+      height: 'inherit';
+      object-fit: cover;
+}

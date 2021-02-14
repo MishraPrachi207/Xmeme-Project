@@ -1,0 +1,15 @@
+
+
+    
+    .container > div{
+       width: 150px;
+       height:150px;
+       background-color: red;
+    }
+
+    .right{
+        float: right;
+    }
+
+    .left{
+        float: left;}

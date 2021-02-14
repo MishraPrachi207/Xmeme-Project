@@ -1,0 +1,11 @@
+#spring:
+#  datasource:
+#    username: admin
+#    password: password
+#    url: jdbc:mysql://database-1.cl8k56sn33hi.us-east-2.rds.amazonaws.com/xmemedb
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#      properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
