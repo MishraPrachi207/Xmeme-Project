@@ -1,5 +1,4 @@
-cd Xmeme-project\demo
-mvn clean 
+mvn clean package
 java -jar "Xmeme-project\demo\target\xmeme-backend-docker.jar"
 
 cd Xmeme-project\xmeme-frontend
