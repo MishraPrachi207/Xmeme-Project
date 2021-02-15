@@ -1,3 +1,3 @@
 java -jar "./demo/target/xmeme-backend-docker.jar" &
-npm --prefix ./xmeme-frontend start
+npm --prefix ./xmeme-frontend start &
 
