@@ -2,7 +2,7 @@
 sudo apt-get update -y
 sudo apt-get install -y mysql-server-5.7
 sudo mysql -e "CREATE DATABSE xmemedb"
-sudo mysql -e "CREATE USER 'admin'@'localhost' IDENTIFIED BY 'Password@123'"
+sudo mysql -e "CREATE USER 'admin'@'localhost' IDENTIFIED BY 'Password#123'"
 sudo mysql -e "GRANT ALL PRIVILEGES ON xmemedb.* TO 'admin'@'localhost' WITH GRANT OPTION"
 sudo apt install openjdk-8-jre-headless -y
 sudo apt-get install openjdk-8-jdk -y	
