@@ -22,6 +22,7 @@ public class MemeController {
     //Gets most recent 100 meme objects from database
     @RequestMapping(value="/memes")
     @ResponseStatus(HttpStatus.OK)
+    @CrossOrigin(origins = "http://localhost:3000")
     public ResponseEntity get100Memes(){
         return new ResponseEntity(memeService.get(), HttpStatus.OK);
     }
@@ -30,6 +31,7 @@ public class MemeController {
     //Gets meme object corresponding to the id provided as query param.
     @GetMapping("/memes/{id}")
     @ResponseStatus(HttpStatus.OK)
+    @CrossOrigin(origins = "http://localhost:3000")
     public ResponseEntity getMemeById(@PathVariable int id){
         return new ResponseEntity(memeService.getMemeById(id),HttpStatus.OK);
     }
@@ -38,6 +40,7 @@ public class MemeController {
     //Posts meme object to database
     @PostMapping("/memes")
     @ResponseStatus(HttpStatus.CREATED)
+    @CrossOrigin(origins = "http://localhost:3000")
     public  ResponseEntity<Integer  > save(@RequestBody Meme meme){
         return new ResponseEntity<>(memeService.save(meme), HttpStatus.CREATED);
     }
@@ -46,6 +49,7 @@ public class MemeController {
     //Updates caption or url or both for the meme object corresponding to the id provided as query param.
     @PatchMapping("/memes/{id}")
     @ResponseStatus(HttpStatus.OK)
+    @CrossOrigin(origins = "http://localhost:3000")
     public ResponseEntity updateCaptionOrUrl(@PathVariable int id ,@RequestBody Meme meme){
         if(memeService.getMemeById(id)==null){
             return new ResponseEntity(HttpStatus.NOT_FOUND);
